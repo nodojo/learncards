@@ -63,6 +63,10 @@ When running you must provide the location of the flashcards json file.
 learncards my_flashcards.json
 ```
 
+Then simple navigate to [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+to practice your flashcards.
+
+
 ## License
 ```
 The MIT License (MIT)
