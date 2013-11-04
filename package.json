@@ -1,0 +1,33 @@
+{
+  "name": "learncards",
+  "version": "0.1.0",
+  "description": "Easily create flash cards for learning anything",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brettlangdon/learncards.git"
+  },
+  "keywords": [
+    "learn",
+    "cards",
+    "flash",
+    "flashcard",
+    "flashcards",
+    "server"
+  ],
+  "author": "Brett Langdon <brett@blangdon.com> (http://brett.is/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettlangdon/learncards/issues"
+  },
+  "dependencies": {
+    "express": "~3.4.4",
+    "jade": "~0.35.0"
+  },
+ "bin": {
+  "learncards": "bin/learncards"
+ }
+}
