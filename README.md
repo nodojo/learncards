@@ -38,7 +38,7 @@ title in the html site accordingly.
 ```javascript
 {
   "title": "My Flashcards",
-  "cards": {
+  "cards": [
     {
       "question": "Who is the greatest?",
       "answer": "Brett Langdon"
@@ -47,7 +47,7 @@ title in the html site accordingly.
       "question": "Who is terrible at naming projects?",
       "answer": "Brett Langdon"
     }
-  }
+  ]
 }
 ```
 
