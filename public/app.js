@@ -6,8 +6,8 @@ var resize = function(name){
     var node = document.getElementById(name);
     node.style.width = window.innerWidth + "px";
     node.style.height = window.innerHeight + "px";
-    node.childNodes[0].style["font-size"] = Math.round(window.innerHeight / factor) + "px";
-    node.childNodes[0].style["margin-top"] = Math.round(-node.childNodes[0].clientHeight / 2) + "px";
+    // node.childNodes[0].style["font-size"] = Math.round(window.innerHeight / factor) + "px";
+    // node.childNodes[0].style["margin-top"] = Math.round(-node.childNodes[0].clientHeight / 2) + "px";
 };
 
 var resize_buttons = function(){
