@@ -2,12 +2,268 @@
     "title": "My Flashcards",
     "cards": [
       {
-        "question": "Explain what inheritance is, and why it's important.",
-        "answer": "Inheritance is one of the most important concepts in object-oriented programming, together with encapsulation and polymorphism. Inheritance allows developers to create new classes that reuse, extend, and modify the behavior defined in other classes. This enables code reuse and speeds up development. With inheritance, developers can write and debug one class only once, and then reuse that same code as the basis for the new classes. The class whose members are inherited is called the base class, and the class that inherits those members is called the derived class. By default, all classes in .NET are inheritable."
+        "question": "What is a database?",
+        "answer": "A database is an organized set of stored data that can be accessed from a computer."
       },
       {
-        "question": "Explain the differences between an Interface and an Abstract Class in .NET.",
-        "answer": "An interface merely declares a contract or a behavior that implementing classes should have. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented. An abstract class provides a partial implementation for a functionality and some abstract/virtual members that must be implemented by the inheriting entities. It can declare fields too. Neither interfaces nor abstract classes can be instantiated."
+        "question": "What is a DBMS?",
+        "answer": "A DataBase Management System is a software system designed to manipulate, add, retrieve, define, and manage data in a database."
+      },
+      {
+        "question": "What is the difference bewteen an RDBMS and a DBMS?",
+        "answer": "A Relational DataBase Management System stores data in a collection of tables where relations can be defined using the common fields (columns) of the tables."
+      },
+      {
+        "question": "What is SQL?",
+        "answer": "Structured Query Language is a programming language for manipulating, adding, and retrieving data stored in a relational database."
+      },
+      {
+        "question": "What are tables is SQL?",
+        "answer": "A table is composed of rows (records) and columns (fields) in which data is stored in an organized way."
+      },
+      {
+        "question": "What are constraints in SQL?",
+        "answer": "Constraints are rules that dictate the type of data that can go into a table or column (field). If there is any violation between the constraint and the data action, the action is aborted."
+      },
+      {
+        "question": "Give examples of constraints commonly used in SQL.",
+        "answer": "NOT NULL - Ensures that a column cannot have a NULL value. UNIQUE - Ensures that all values in a column are different. PRIMARY KEY - Uniquely identifies each row in a table. FOREIGN KEY - Prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the parent table. CHECK - Ensures that the values in a column satisfies a specific condition. DEFAULT - Sets a default value for a column if no value is specified."
+      },
+      {
+        "question": "What is a primary key in SQL?",
+        "answer": "A primary key uniquely identifies each row in a table. It also has an implicit NOT NULL constraint."
+      },
+      {
+        "question": "What is a foreign key in SQL?",
+        "answer": "A foreign key is a link between tables. An attribute/collection of attributes in a table that refer to the primary key of another table."
+      },
+      {
+        "question": "What is a JOIN in SQL?",
+        "answer": "A JOIN clause combines records (rows) from one or more tables based on a related column between the two into a new table."
+      },
+      {
+        "question": "What are the types of JOINs in SQL?",
+        "answer": "INNER JOIN - Returns records that have matching values in both tables. LEFT (OUTER) JOIN - Returns all records from the left table, and the matched records from the right table. RIGHT (OUTER) JOIN - Returns all records from the right table, and the matched records from the left table. FULL (OUTER) JOIN - Returns all records when there is a match in either left or right table."
+      },
+      {
+        "question": "What is a SELF-JOIN (unary relation) in SQL?",
+        "answer": "A SELF-JOIN (unary relation) is a regular join, but the table is joined with itself."
+      },
+      {
+        "question": "What is an index in SQL?",
+        "answer": "An index is a quick lookup table for finding records very fast. Indexes should only be created on columns that will be frequently searched against because updating a table with indexes takes more time than updating a table with no indexes (since the indexes also need to be updated)."
+      },
+      {
+        "question": "What are the differences between clustered and non-clustered indexes in SQL?",
+        "answer": "CLUSTERED INDEX - Determines the physical order of data in the table. Each table can have only one clustered index. Provides faster data retrieval for the indexed column(s). May result in slower data modification operations (INSERT, UPDATE) due to the need to maintain the order. NON-CLUSTERED INDEX - Doesn't change the physical order of data in the table. Allows multiple non-clustered indexes per table. Results in slower data retrieval compared to a clustered index for indexed columns. Offers faster data modification operations compared to clustered indexes."
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
       }
     ]
   }
