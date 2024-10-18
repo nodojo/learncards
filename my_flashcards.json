@@ -58,48 +58,48 @@
         "answer": "CLUSTERED INDEX - Determines the physical order of data in the table. Each table can have only one clustered index. Provides faster data retrieval for the indexed column(s). May result in slower data modification operations (INSERT, UPDATE) due to the need to maintain the order. NON-CLUSTERED INDEX - Doesn't change the physical order of data in the table. Allows multiple non-clustered indexes per table. Results in slower data retrieval compared to a clustered index for indexed columns. Offers faster data modification operations compared to clustered indexes."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is abstraction in C#?",
+        "answer": "Abstraction is hiding the unnecessary details from type consumers."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is encapsulation in C#?",
+        "answer": "Encapsulation means that a group of related properties, methods, and other members are treated as a single unit or object. An example would be using access modifiers on class members (public, private, protected, etc.)."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is inheritance in C#?",
+        "answer": "Inheritance describes the ability to create new classes based on an existing class by acquiring the its members."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is polymorphism in C#?",
+        "answer": "Polymorphism means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways. Polymorphism means that a call to a member method will cause a different implementation to be executed depending on the type of object that invokes the method. Typically, polymorphism occurs when there is a hierarchy of classes and they are related through inheritance from a common base class."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "List and define the different possible forms of accessibility for class members in C#.",
+        "answer": "PUBLIC - Access not limited. PROTECTED - Access limited to this class or classes derived from this class. INTERNAL - Access limited to this program (the assembly in which it is defined). PROTECTED INTERNAL - Access limited to this program (the assembly in which it is defined) or classes derived from this class. PRIVATE - Access limited to this class. SEALED - Cannot be inherited."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the difference between a class and an object in C#?",
+        "answer": "Objects are instances of classes."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What does the `this` keyword mean in C#?",
+        "answer": "The `this` keyword is a reference to the current instance of a class."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Describe the garbage collection process in .NET.",
+        "answer": "The .NET Framework has a garbage collector that periodically releases memory used by objects when they are no longer accessible. An object will be eligible for destruction when there are no more references to it. Note: Objects cannot be explicitly deallocated in C#."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the difference between an abstract class and an interface in C#?",
+        "answer": "An abstract class is a class that cannot be instantiated. Instead, it serves as a base class for other classes to inherit from. Abstract classes are used to define a common set of behaviors or properties that derived classes should have. Interfaces specify what a class must do and not how. Like a class, Interface can have methods, properties, events, and indexers as its members. But interfaces will contain only the declaration of the members."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What does the modifier `static` indicate in C#?",
+        "answer": "You cannot instantiate an object of a static class, as only one instance of the static class can exist in a program."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Explain the differences between Singleton, Scoped, and Transient lifetimes in ASP.NET Core Web API.",
+        "answer": "SINGLETON - Objects registered as singletons are created once and shared throughout the application’s lifetime. This is useful for stateless services or objects that are expensive to create and can be reused across requests. SCOPED - Scoped objects are created once per client request within the scope of that request. They are disposed of when the request ends. Scoped lifetime is beneficial for objects that maintain state specific to a single request, such as database contexts or unit of work instances. TRANSIENT - Transient objects are created every time they are requested. They are not shared between requests or other components. Transient lifetime is suitable for lightweight, stateless services where a new instance is needed for each operation."
       },
       {
         "question": "",
