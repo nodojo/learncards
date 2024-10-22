@@ -27,7 +27,7 @@
       },
       {
         "question": "Give examples of constraints commonly used in SQL.",
-        "answer": "NOT NULL - Ensures that a column cannot have a NULL value. UNIQUE - Ensures that all values in a column are different. PRIMARY KEY - Uniquely identifies each row in a table. FOREIGN KEY - Prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the parent table. CHECK - Ensures that the values in a column satisfies a specific condition. DEFAULT - Sets a default value for a column if no value is specified."
+        "answer": "NOT NULL: Ensures that a column cannot have a NULL value. UNIQUE: Ensures that all values in a column are different. PRIMARY KEY: Uniquely identifies each row in a table. FOREIGN KEY: Prevents invalid data from being inserted into the foreign key column, because it has to be one of the values contained in the parent table. CHECK: Ensures that the values in a column satisfies a specific condition. DEFAULT: Sets a default value for a column if no value is specified."
       },
       {
         "question": "What is a primary key in SQL?",
@@ -43,7 +43,7 @@
       },
       {
         "question": "What are the types of JOINs in SQL?",
-        "answer": "INNER JOIN - Returns records that have matching values in both tables. LEFT (OUTER) JOIN - Returns all records from the left table, and the matched records from the right table. RIGHT (OUTER) JOIN - Returns all records from the right table, and the matched records from the left table. FULL (OUTER) JOIN - Returns all records when there is a match in either left or right table."
+        "answer": "INNER JOIN: Returns records that have matching values in both tables. LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table. RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table. FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table."
       },
       {
         "question": "What is a SELF-JOIN (unary relation) in SQL?",
@@ -55,7 +55,7 @@
       },
       {
         "question": "What are the differences between clustered and non-clustered indexes in SQL?",
-        "answer": "CLUSTERED INDEX - Determines the physical order of data in the table. Each table can have only one clustered index. Provides faster data retrieval for the indexed column(s). May result in slower data modification operations (INSERT, UPDATE) due to the need to maintain the order. NON-CLUSTERED INDEX - Doesn't change the physical order of data in the table. Allows multiple non-clustered indexes per table. Results in slower data retrieval compared to a clustered index for indexed columns. Offers faster data modification operations compared to clustered indexes."
+        "answer": "CLUSTERED INDEX: Determines the physical order of data in the table. Each table can have only one clustered index. Provides faster data retrieval for the indexed column(s). May result in slower data modification operations (INSERT, UPDATE) due to the need to maintain the order. NON-CLUSTERED INDEX: Doesn't change the physical order of data in the table. Allows multiple non-clustered indexes per table. Results in slower data retrieval compared to a clustered index for indexed columns. Offers faster data modification operations compared to clustered indexes."
       },
       {
         "question": "What is abstraction in C#?",
@@ -75,7 +75,7 @@
       },
       {
         "question": "List and define the different possible forms of accessibility for class members in C#.",
-        "answer": "PUBLIC - Access not limited. PROTECTED - Access limited to this class or classes derived from this class. INTERNAL - Access limited to this program (the assembly in which it is defined). PROTECTED INTERNAL - Access limited to this program (the assembly in which it is defined) or classes derived from this class. PRIVATE - Access limited to this class. SEALED - Cannot be inherited."
+        "answer": "PUBLIC: The type or member can be accessed by any other code in the same assembly or another assembly that references it. PROTECTED: The type or member can only be accessed by code in the same class or struct, or in a derived class. INTERNAL: The type or member can be accessed by any code in the same assembly, but not from another assembly. PROTECTED INTERNAL: The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly. PRIVATE: The type or member can only be accessed by code in the same class or struct. SEALED: Cannot be inherited."
       },
       {
         "question": "What is the difference between a class and an object in C#?",
@@ -95,167 +95,159 @@
       },
       {
         "question": "What does the modifier `static` indicate in C#?",
-        "answer": "You cannot instantiate an object of a static class, as only one instance of the static class can exist in a program."
+        "answer": "You cannot instantiate an object of a static class, as only one instance of the static class can exist in a program. A `static` property is available to callers at any time, even if no instance of the class exists. "
       },
       {
         "question": "Explain the differences between Singleton, Scoped, and Transient lifetimes in ASP.NET Core Web API.",
-        "answer": "SINGLETON - Objects registered as singletons are created once and shared throughout the application’s lifetime. This is useful for stateless services or objects that are expensive to create and can be reused across requests. SCOPED - Scoped objects are created once per client request within the scope of that request. They are disposed of when the request ends. Scoped lifetime is beneficial for objects that maintain state specific to a single request, such as database contexts or unit of work instances. TRANSIENT - Transient objects are created every time they are requested. They are not shared between requests or other components. Transient lifetime is suitable for lightweight, stateless services where a new instance is needed for each operation."
+        "answer": "SINGLETON: Objects registered as singletons are created once and shared throughout the application's lifetime. This is useful for stateless services or objects that are expensive to create and can be reused across requests. SCOPED: Scoped objects are created once per client request within the scope of that request. They are disposed of when the request ends. Scoped lifetime is beneficial for objects that maintain state specific to a single request, such as database contexts or unit of work instances. TRANSIENT: Transient objects are created every time they are requested. They are not shared between requests or other components. Transient lifetime is suitable for lightweight, stateless services where a new instance is needed for each operation."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is metadata?",
+        "answer": "Metadata describes every type and member defined in our code in a multi-language form. Metadata stores the following information: 1. description of assembly, 2. identity (name, version, culture, public key), 3. the types that are exported, 4. other assemblies that this assembly depends on, and 5. security permissions are needed to run."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is an assembly?",
+        "answer": "Assemblies are the building block of .NET framework applications; they form the fundamental unit of deployment, version control, reuse, activation scoping and security permissions."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is C#?",
+        "answer": "C# is a Simple, Secure, Robust, Portable, Platform-Independent, Architectural Neutral, Multithreaded, Automatic Memory Management, Object-Oriented Programming Language with a strong type Exception Handling mechanism for developing different kinds of applications such as Web, Windows Form, Console, Web Services, Mobile Apps, etc. which can be run on different Operating Systems such as Windows, Linus, and Mac."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the difference between an EXE and a DLL?",
+        "answer": "An EXE is an executable file and can run by itself as an application whereas DLL is usually consumed by an EXE or by another DLL and we cannot run or execute DLL directly. For example in .NET compiling a Console Application or a Windows Application generates EXE, whereas compiling a Class Library Project or an ASP.NET web application generates DLL. In the .NET framework, both EXE and DLL are called assemblies. A DLL can be reused in the application whereas an exe file can never be reused in an application. EXE stands for executable, and DLL stands for Dynamic Link Library."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What do you mean by String objects are immutable?",
+        "answer": "String objects cannot be changed once they are created. All of the String methods and C# operators that appear to modify a string actually return the results in a new string object."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "How do you determine whether a String represents a numeric value?",
+        "answer": "To determine whether a String represents a numeric value, we can use the TryParse method as shown in the example below. If the string contains non-numeric characters or the numeric value is too large or too small for the particular type you have specified, TryParse returns false and sets the out parameter to zero. Otherwise, it returns true and sets the out parameter to the numeric value of the string."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are Properties in C#?",
+        "answer": "Properties in C# are class members that provide a flexible mechanism to read, write, or compute the values of private fields. Properties can be used as if they are public data members, but they are actually special methods called accessors. This enables data to be accessed easily and still helps promote the safety and flexibility of methods."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the different types of properties available in C#?",
+        "answer": "READ-ONLY: Properties without a set accessor are considered read-only. WRITE-ONLY: Properties without a get accessor are considered write-only. READ-WRITE: Properties with both a get and set accessor are considered read-write properties."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the advantages of using properties in C#?",
+        "answer": "1. Properties can validate data before allowing a change. 2. It can transparently expose data on a class where that data is actually retrieved from some other source such as a database. 3. Properties can take action when data is changed, such as raising an event or changing the value of other fields."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is Virtual Property in C#?",
+        "answer": "Virtual properties enable derived classes to override the property behavior by using the override keyword."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is an Abstract Property in C#?",
+        "answer": "An abstract property should not have any implementation in the class. The derived classes must write their own implementation."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the 2 types of data types available in C#?",
+        "answer": "1. Value Types 2. Reference Types"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "If you define a user-defined data type by using the struct keyword, Is it a value type or reference type?",
+        "answer": "Value Type"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "If you define a user-defined data type by using the class keyword, Is it a value type or reference type?",
+        "answer": "Reference Type"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Give examples of value types.",
+        "answer": "Enums and Structs"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Give examples for reference types.",
+        "answer": "Classes, Delegates, Arrays, and Interfaces"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the differences between value types and reference types?",
+        "answer": "Value types are stored on the stack whereas reference types are stored on the managed heap. The Value type variables directly contain their values whereas reference variables hold only a reference to the location of the object that is created on the managed heap. There is no heap allocation or garbage collection overhead for value-type variables. As reference types are stored on the managed heap, they have the overhead of object allocation and garbage collection. Value Types cannot inherit from another class or struct. Value types can only inherit from interfaces. Reference types can inherit from another class or interface."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the 2 kinds of data type conversions available in C#?",
+        "answer": "1. Implicit conversions: No special syntax is required because the conversion is typesafe and no data will be lost. Examples include conversions from smaller to larger integral types and conversions from derived classes to base classes. 2. Explicit conversions: Explicit conversions require a cast operator. The source and destination variables are compatible, but there is a risk of data loss because the type of the destination variable is a smaller size than (or is a base class of) the source variable."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the difference between an implicit conversion and an explicit conversion?",
+        "answer": "Explicit conversions require a cast operator whereas an implicit conversion is done automatically. The Explicit conversion can lead to data loss whereas with implicit conversions there is no data loss."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What do protected internal access modifiers mean?",
+        "answer": "The protected internal access means protected OR internal, not protected, AND internal. In simple terms, a protected internal member is accessible from any class in the same assembly, including derived classes. To limit access to only derived classes in the same assembly, declare the class itself internal, and declare its members as protected."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the default access modifier for a class, struct, and interface declared directly with a namespace?",
+        "answer": "internal"
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Can you specify an access modifier for an enumeration?",
+        "answer": "Enumeration members are always public, and no access modifiers can be specified."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Discuss the differences between constants and read-only variables.",
+        "answer": "1. Constants are evaluated at compile time, while the read-only variables are evaluated at run time. 2. Constants support only value-type variables (the only exception being strings), while read-only variables can hold reference-type variables. 3. Constants should be used when the value is not changing during run time, and read-only variables are used mostly when their actual value is unknown before run time. 4. Read-only variables can only be initialized at the time of declaration or in a constructor."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Why can't you specify access modifiers for items in an interface?",
+        "answer": "Interfaces are always public."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is a delegate in .NET?",
+        "answer": "A delegate in .NET is similar to a function pointer in C or C++. Using a delegate allows the programmer to encapsulate a reference to a method inside a delegate object. The delegate object can then be passed to code which can call the referenced method, without having to know at compile time which method will be invoked. In addition, we could use delegate to create custom event within a class."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Explain the difference between the Stack and the Heap.",
+        "answer": "In the Stack are stored value types (types inherited from System.ValueType), and in the Heap are stored reference types (types inherited from System.Object). The Stack is responsible for keeping track of what is actually executing and where each executing thread is (each thread has its own Stack). The Heap, on the other hand, is responsible for keeping track of the data, or more precise objects."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Explain what LINQ is.",
+        "answer": "LINQ is an acronym for Language Integrated Query, and was introduced with Visual Studio 2008. LINQ is a set of features that extends query capabilities to the .NET language syntax by adding sets of new standard query operators that allow data manipulation, regardless of the data source. Supported data sources are: .NET Framework collections, SQL Server databases, ADO.NET Datasets, XML documents, and any collection of objects that support IEnumerable or the generic IEnumerable<T> interface, in both C# and Visual Basic. In short, LINQ bridges the gap between the world of objects and the world of data."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Explain the difference between boxing and unboxing.",
+        "answer": "Boxing is the process of converting a value type to the type object, and unboxing is extracting the value type from the object. While the boxing is implicit, unboxing is explicit."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "Explain the difference between managed and unmanaged code.",
+        "answer": "MANAGED CODE is a code created by the .NET compiler. It does not depend on the architecture of the target machine because it is executed by the CLR (Common Language Runtime), and not by the operating system itself. CLR and managed code offers developers few benefits, like garbage collection, type checking and exceptions handling. UNMANAGED CODE is directly compiled to native machine code and depends on the architecture of the target machine. It is executed directly by the operating system. In the unmanaged code, the developer has to make sure he is dealing with memory usage and allocation (especially because of memory leaks), type safety and exceptions manually."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "List and explain the execution steps of a .NET application.",
+        "answer": "1. The compiler compiles the Source Code into Intermediate Language (IL). 2. The JIT compiler of CLR will convert the Intermediate Language (IL) code into native code (Machine Code or Binary Code), which the underlying operating system can then execute. "
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the different types of .NET Framework?",
+        "answer": "1. .NET Framework: .NET Framework is the original implementation of .NET. It supports running websites, services, desktop applications, and more on Windows OS Only. 2. .NET: .NET is a cross-platform implementation for running websites, services, and console applications on Windows, Linux, and macOS. .NET is open source on GitHub and .NET was previously called .NET Core. 3. Xamarin/Mono: Xamarin/Mono is a .NET implementation for running apps on all the major mobile operating systems, including iOS and Android."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is JIT?",
+        "answer": "JIT stands for the Just-in-Time compiler. It is the component of CLR that is responsible for converting MSIL code into Native Code. Native code is code that is directly understandable by the operating system."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the two major components of the .NET Framework",
+        "answer": "1. CLR: The Common Language Runtime (CLR) is the execution engine that handles running applications. It provides services like thread management, garbage collection, type safety, exception handling, and more. 2. BCL: The Base Class Library provides a set of APIs and types for common functionality. It provides types for strings, dates, numbers, etc. The Class Library includes APIs for reading and writing files, connecting to databases, drawing, and more."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What is the difference between .NET and .NET Framework?",
+        "answer": "1. .NET is Cross-Platform and runs on Linux, macOS, and Windows OS. .NET Framework only runs on Windows OS. 2. .NET is Open-Source and accepts contributions from the community. The .NET Framework source code is available but does not take direct contributions. 3. .NET Framework is included in Windows and automatically updated machine-wide by Windows Update. .NET is shipped independently."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the pros of using C#/.NET?",
+        "answer": "1. C# IS SIMPLE AND FAMILIAR: C# is simple because C# simplifies the programmer's job by avoiding certain features of C and C++. C# avoids explicit memory management. Memory management in C# is automatic. It is done by CLR. So, there is no chance of memory leakage. There is a pointer concept in C# but it is restricted. C# is very familiar to programmers because it is modeled on the C and C++ languages. C# uses many features of C and C++; therefore, C# codes look like C and C++ codes. We can say C# is the simplified version of C and C++. 2. C# IS PORTABLE: Portability allows the programmer to write the same code for different machines (operating systems). C# provides portability in two ways: a. Source Code Portability b. IL Code Portability (DLL and EXE). In C#, we can write the source code in Multiple OS and get the output. Even though we can IL Code Portability is also available. So, once you have the DLL and EXE, then you can use those DLLs and EXEs on different OS and you can get the output as expected. Whereas in the case of C and C++ there is only source code portability. 3. C# IS ARCHITECTURALLY NEUTRAL: The behavior of C# programs doesn't change when we move from one system to another which means it will provide the same output in every machine because in C# memory layout decisions are not made at compile time, it is made at run time by CLR. It is because of CTS (Common Type System) and in our coming session we will discuss it in detail. But in the case of C and C++ programs, the behavior changes when we move the program from one system to another and the reason for this is the size of data types varies from OS to OS. 4. C# IS SECURED: C# is secured because the C# programs are executed in a secured environment called CLR. CLR will provide security to the C# programs. 5. C# IS ROBUST: Robust means Strong. C# is a strong type-checking language having strict type-checking during both compilation time and execution time which allows us to develop error-free applications and programs. 6. C# IS DISTRIBUTED: Using C# Programming Language, we can develop distributed applications whose resources are shared by more than one client. An application or program whose resources are shared by more than one client is called a distributed application. As C# is used for developing such applications for example WCF Applications, Restful Services, etc. So, C# is a distributed programming language. 7. C# IS MULTITHREADED: A process is divided into several small parts known as threads or lightweight processes. Sending multiple threads to the processor for processing is known as multithreading. Multi-threading means handling multiple tasks simultaneously. For example, we can listen to music while scrolling a page and at the same time we can download an application from the internet on a computer. If multiple threads are used to execute your application code, then it is called Multithreading. Multithreading is a mechanism to implement Concurrent Programming where multiple threads execute the code simultaneously. And using C# Programming language we can develop multithread applications. So, C# supports multithreaded programming. 8. C# IS DYNAMIC: C# 4.0 introduced a new type called dynamic that avoids compile-time type checking. A dynamic type escapes type checking at compile-time; instead, it resolves the type at run time. So, if you don't know the type of data that you want to store, then you can use dynamic as the data type, and at runtime based on value or data, the type will automatically resolve. So, C# is dynamic. 9. C# IS COMPILED AND INTERPRETED: We know a programming language is either compiled or interpreted. But C# combines both approaches. That's why C# is called a two-stage system. First C# compiler CSC translates source code into an intermediate language code known as MSIL (Microsoft Intermediate Language) or CIL (Common Intermediate Language) code. But these MSIL or CIL or IL codes are not machine instructions. So, in the second stage, these MSIL or CIL, or IL codes are interpreted by the C# interpreter (One Component of CLR called JIT- Just in Time Compiler). As a result, machine instructions will be generated which are directly executed by the machine. Hence, we are saying C# is both interpreted and compiled language. 10. C# IS OBJECT-ORIENTED: Except for the primitive data types, all elements in C# are objects. Object-oriented is not a programming language, it is a programming technique or concept, or principle which defines a set of rules and regulations for organizing the data and instructions. The concepts provided by oops are as follows: a. Encapsulation b. Abstraction c. Polymorphism d. Inheritance. 11. C# IS PLATFORM INDEPENDENT: Many Programming Languages are compatible with only one platform. Now, with the introduction of .NET Core or .NET, C# was specifically designed to be platform-independent. C# applications with .NET Core or .NET can be run on Windows, Linux, and Mac operating systems. So, we can say C# is Platform Independent with .NET Core or .NET. 12. AUTOMATIC MEMORY MANAGEMENT: The .NET Framework automatically manages memory allocation and de-allocation for objects. When a dot net application runs, lots of objects are created. At a given point in time, it is possible that some of those objects are not used by the application. Garbage Collector in .NET Framework is nothing but a Small Routine or you can say it is a Background Process that runs periodically and try to identify what objects are not being used currently by the application and de-allocates the memory of those objects. So, as a developer, we need not worry about how memory allocation and deallocation are done in .NET Applications. 13. EXCEPTION HANDLING: C# Provides Strong Exception Handling Features which can be used to stop the Abnormal Termination of the program and you can also provide user-understandable messages when an exception is raised."
       },
       {
-        "question": "",
-        "answer": ""
+        "question": "What are the features of C#?",
+        "answer": "1. SIMPLE: C# is a simple language in the sense that it provides a structured approach (to break the problem into parts), a rich set of library functions, data types, etc. 2. MODERN PROGRAMMING LANGUAGE: C# programming is based upon the current trend and it is very powerful and simple for building scalable, interoperable, and robust applications. 3. OBJECT-ORIENTED: C# is an object-oriented programming language. OOPs makes development and maintenance easier whereas in Procedure-oriented programming language it is not easy to manage if code grows as the project size grows. 4. TYPE-SAFE: C# type safe code can only access the memory location that it has permission to execute. Therefore, it improves the security of the program. 5. INTEROPERABILITY: The interoperability process enables the C# programs to do almost anything that a native C++ application can do. 6. SCALABLE AND UPDATEABLE: C# is an automatic scalable and updateable programming language. For updating our application, we delete the old files and update them with new ones. 7. COMPONENT ORIENTED: C# is a component-oriented programming language. It is the predominant software development methodology used to develop more robust and highly scalable applications. 8. STRUCTURED PROGRAMMING LANGUAGE: C# is a structured programming language in the sense that we can break the program into parts using functions. So, it is easy to understand and modify. 9. RICH LIBRARY: C# provides a lot of inbuilt functions that make development fast. 10. FAST SPEED: The compilation and execution time of the C# language is fast."
       },
       {
-        "question": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "answer": ""
-      },
-      {
-        "question": "",
-        "answer": ""
+        "question": "What are some differences between multithreading, parallel programming, and asynchronous programming in C#?",
+        "answer": "1. MULTITHREADING is all about a single process split into multiple threads. 2. PARALLEL PROGRAMMING is all about multiple tasks running on multiple cores simultaneously. 3. ASYNCHRONOUS PROGRAMMING is all about a single thread initiating multiple tasks without waiting for each to complete."
       },
       {
         "question": "",

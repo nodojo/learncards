@@ -1,7 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Fondamento);
-
 body, #question, #answer{
-    font-family:Fondamento,cursive;
+    font-family: math;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -28,9 +26,7 @@ body, #question, #answer{
 
 #question, #answer {
     text-align: center;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
+    font-size: xx-large;
 }
 
 #answer {
@@ -40,5 +36,5 @@ body, #question, #answer{
 .text {
     top: 50%;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 }
