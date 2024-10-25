@@ -330,6 +330,370 @@
         "answer": "1. SINGLETON ensures a class has only one instance and provides a global point of access to it. Useful for managing global state or resources. 2. FACTORY defines an interface for creating objects but lets subclasses decide which class to instantiate. Helpful for creating objects without exposing the creation logic. 3. ADAPTER converts the interface of a class into another interface the client expects. Allows classes with incompatible interfaces to work together. 4. OBSERVER defines a one-to-many dependency between objects. So that when one object changes state, all its dependents are notified and updated automatically. Useful for implementing event-driven architectures. 5. STRATEGY defines a family of algorithms, encapsulates each one, and makes them interchangeable. Allows the algorithm used by a class to be selected at runtime."
       },
       {
+        "question": "What is loosely-coupled code? How is it better than tightly-coupled code? How would you achieve loose coupling?",
+        "answer": "Loosely-coupled code has minimal dependencies between components, enabling independent development and evolution. It's better than tightly-coupled code, which is harder to maintain and change. Achieve loose coupling through abstractions (interfaces), dependency injection, event-driven communication, and modular design."
+      },
+      {
+        "question": "Does using static classes increase or decrease code coupling?",
+        "answer": "Static classes can increase code coupling by introducing global states and dependencies across the codebase. Static classes are best used judiciously for utility classes or when truly required."
+      },
+      {
+        "question": "How can you measure code performance? Does the act of measuring affect performance?",
+        "answer": "Code performance can be measured using profiling tools, benchmarking frameworks, and performance counters. The act of measuring can affect performance due to instrumentation overhead."
+      },
+      {
+        "question": "How can you tell when a piece of code is consuming a lot of memory or running slowly? What can be a bottleneck in different cases? What are ways to reduce memory usage and memory traffic?",
+        "answer": "You can use profiling tools like memory and CPU profilers to identify code that consumes a lot of memory or runs slowly. Potential bottlenecks could be CPU-bound tasks, I/O-bound tasks, or memory-intensive operations. You can optimize data structures, limit allocations, and use techniques like memory pooling to reduce memory usage. To reduce memory traffic, you can improve cache utilization, minimize data copying, and optimize memory access patterns."
+      },
+      {
+        "question": "Tell me about the REST Maturity Model.",
+        "answer": "The REST Maturity Model is a framework for evaluating the level of “RESTfulness” in an API. It has four levels: Level 0 (the most basic), Level 1 (resource-oriented), Level 2 (HTTP verbs), and Level 3 (hypermedia controls)."
+      },
+      {
+        "question": "What is marshaling?",
+        "answer": "Marshaling is the process of converting an object's internal representation into a format that can be transmitted, stored, or read from a stream."
+      },
+      {
+        "question": "How do you enable CORS in ASP.NET Core?",
+        "answer": "In ASP.NET Core, you can enable CORS (Cross-Origin Resource Sharing) by configuring the CorsOptions in the Startup.cs file. It allows you to specify which origins, headers, and HTTP methods are allowed to access your API."
+      },
+      {
+        "question": "What data structures have you implemented yourself for the .NET platform? How did they differ from the standard implementations?",
+        "answer": "I have implemented several custom data structures for the .NET platform, including a custom Linked List and a Priority Queue. These implementations often differ from the standard .NET collections regarding performance characteristics, memory usage, or specialized functionality."
+      },
+      {
+        "question": "How do interfaces differ from abstract classes? In what cases would you use one or the other?",
+        "answer": "The main difference between interfaces and abstract classes is that interfaces can only define method signatures, properties, events, and indexers. At the same time, abstract classes can include method implementations, fields, and constructors. Interfaces are generally used to define contracts or APIs, while abstract classes are used to provide a base implementation for related types."
+      },
+      {
+        "question": "When and which databases are better to use?",
+        "answer": "The choice of database depends on factors like the data model, scalability requirements, performance needs, and the type of queries the application will perform. RDBMS are well-suited for applications with structured data and complex relationships. In contrast, NoSQL databases excel at handling unstructured data and high-volume, high-velocity workloads."
+      },
+      {
+        "question": "What is denormalization?",
+        "answer": "Denormalization is the process of intentionally duplicating data in a database to improve query performance."
+      },
+      {
+        "question": "How are the ACID principles implemented in popular RDBMSs (SQL Server, PostgreSQL, etc.)?",
+        "answer": "ACID (Atomicity, Consistency, Isolation, Durability) principles are implemented in RDBMS through features like transaction management, locking mechanisms, and logging/recovery processes."
+      },
+      {
+        "question": "Have you ever optimized a database query? If so, how?",
+        "answer": "Database queries can be optimized by analyzing execution plans, adding appropriate indexes, and denormalizing data structures."
+      },
+      {
+        "question": "What problem do microservices solve?",
+        "answer": "Microservices solve the complexity problem in large, monolithic applications by breaking them down into smaller, independent services that can be developed, deployed, and scaled separately."
+      },
+      {
+        "question": "What are the ways microservices can communicate?",
+        "answer": "Microservices can communicate using various inter-service communication patterns, such as synchronous HTTP/REST, asynchronous messaging (e.g., queues, event buses), or a hybrid approach."
+      },
+      {
+        "question": "How would you debug a system composed of multiple microservices to trace the full request processing path?",
+        "answer": "To debug a microservices-based system, you can use distributed tracing tools like Jaeger or Zipkin, which allow you to trace the full request processing path across multiple services."
+      },
+      {
+        "question": "What are message brokers?",
+        "answer": "Message brokers like RabbitMQ, Apache Kafka, or Azure Service Bus facilitate asynchronous communication between microservices."
+      },
+      {
+        "question": "What queue-related tools are you familiar with (both in .NET and standalone products), and which would you choose and why?",
+        "answer": "I'm familiar with various queue-related tools, such as RabbitMQ, Apache Kafka, and Azure Service Bus. The choice would depend on factors like the application's specific requirements, the team's familiarity with the technology, and the overall ecosystem."
+      },
+      {
+        "question": "Why is the ThreadPool needed? Describe the mechanics: how a thread is allocated and returned to the ThreadPool.",
+        "answer": "The ThreadPool provides an efficient way to manage and reuse threads for asynchronous/parallel tasks, avoiding the overhead of manual thread creation/termination. When a task is requested, the ThreadPool allocates an available thread from its queue; if none is available and under the max limit, it creates a new thread. After executing the task, the thread is returned to the queue for reuse until an idle timeout, then terminated."
+      },
+      {
+        "question": "How do ORMs (Entity Framework or Entity Framework Core) translate C# code into database query language? What is used for this?",
+        "answer": "ORMs like Entity Framework and Entity Framework Core use a component called LINQ to Entities (LINQ to EF) to translate C# LINQ queries into database query language (SQL). LINQ to Entities acts as a query provider, taking the LINQ query expression and translating it into an expression tree. This expression tree is then processed by the Entity Framework query pipeline, which generates the corresponding SQL query to be executed against the database. The translation process involves analyzing the expression tree, applying optimization rules, and mapping the LINQ constructs to their SQL equivalents."
+      },
+      {
+        "question": "What is an index in a database?",
+        "answer": "An index in a database is a data structure that stores a subset of data from a table to improve the speed of data retrieval operations. It works similarly to an index in a book, pointing to the location of specific data values within the table. Indexes are typically created on one or more columns of a table."
+      },
+      {
+        "question": "When should you use indexes?",
+        "answer": "Indexes should be used when: 1. Frequent queries involve searching, sorting, or retrieving data based on one or more columns. 2. You need to enforce uniqueness constraints or foreign key relationships. 3. You want to improve the performance of join operations between tables."
+      },
+      {
+        "question": "What are the pros and cons of using indexes?",
+        "answer": "PROS: 1. Faster data retrieval for queries involving indexed columns. 2. Improved query performance, especially for large tables. 3. Enforced uniqueness and integrity constraints. CONS: 1. Additional storage space is required for the index data structures. 2. Due to index maintenance, increased overhead for data modification operations (inserts, updates, deletes). 3. Potential for index fragmentation over time, leading to performance degradation."
+      },
+      {
+        "question": "What types of indexes exist? How do they differ?",
+        "answer": "CLUSTERED INDEX: Physically reorders the data rows in the table based on the index key values. Only one clustered index is allowed per table. NON-CLUSTERED INDEX: Stores the index keys and pointers to the corresponding data rows, keeping the data rows' physical order unchanged. Multiple non-clustered indexes are allowed per table. UNIQUE INDEX: Ensures that the indexed column(s) have unique values across all rows in the table. COMPOSITE INDEX: Indexes multiple columns within the same index structure. COVERING INDEX: Includes all the columns required for a query, eliminating the need to access the data rows directly. FULL-TEXT INDEX: Optimized for text-based searches, allowing for pattern matching and linguistic analysis. SPATIAL INDEX: Used for efficiently querying and retrieving spatial data, such as geographic coordinates."
+      },
+      {
+        "question": "What is ACID?",
+        "answer": "ACID is an acronym that represents four essential properties of database transactions: ATOMICITY: A transaction is an indivisible unit of work; either all of its operations are completed successfully or none are executed. CONSISTENCY: A transaction must leave the database in a valid state, following all defined rules, constraints, and integrity constraints. ISOLATION: Concurrent transactions must execute independently and not interfere with each other, even if they operate on the same data. DURABILITY: Once a transaction is committed, its effects must persist and remain permanent, even in the event of system failure or power outage."
+      },
+      {
+        "question": "What is a query execution plan in MS SQL?",
+        "answer": "A query execution plan in Microsoft SQL Server is a strategy that the database engine generates to execute a given SQL query. It represents the sequence of operations and algorithms the query optimizer chooses to retrieve the requested data efficiently. The query execution plan provides insights into the following: 1. The order of operations (e.g., table scans, index seeks, joins, sorts, aggregations). 2. The specific indexes and data structures used. 3. The estimated cost and resource utilization (CPU, memory, I/O). 4. The data flow and data access patterns."
+      },
+      {
+        "question": "What can DBAs and developer achieve by analyzing the query execution plan?",
+        "answer": "1. Identify potential performance bottlenecks or inefficient operations. 2. Optimize queries by modifying indexing strategies or query structures. 3. Understand the reasoning behind the query optimizer's choices. 4. Diagnose and troubleshoot slow-performing queries."
+      },
+      {
+        "question": "If a query is taking a long time to execute, what methods can be used to diagnose the problem?",
+        "answer": "1. Analyze the Query Execution Plan: Examine the query execution plan to identify potential bottlenecks, such as inefficient index usage, costly operations (e.g., table scans), or suboptimal join strategies. 2. Check Indexing Strategy: Verify if appropriate indexes exist for the columns involved in the query predicates, joins, and sorting operations. If necessary, create new indexes or modify existing ones. 3. Review Query Structure: Analyze the query structure and consider rewriting it using more efficient constructs, such as subqueries, derived tables, or common table expressions (CTEs). 4. Check Statistics: Ensure the database statistics are up-to-date, as outdated statistics can lead to suboptimal query plans. 5. Monitor Resource Usage: Use monitoring tools to check for resource contention or bottlenecks, such as high CPU usage, memory pressure, or disk I/O issues. 6. Partition Data: If the query involves large tables, consider partitioning the data to improve query performance and enable parallel execution. 7. Optimize Database Configuration: Review database configuration settings, such as memory allocation, cost thresholds, and query optimization levels, and adjust them as needed. 8. Implement Caching: If the query involves repetitive or static data, consider implementing caching mechanisms to avoid redundant database queries. 9. Parallelize Queries: Investigate if the query can be parallelized or if the database supports parallel query execution to leverage multiple CPU cores. 10. Denormalize Data: In some cases, denormalizing data by introducing redundancy can improve query performance, but it should be carefully weighed against potential data integrity and maintenance concerns."
+      },
+      {
+        "question": "What is reflection?",
+        "answer": "Reflection is a mechanism in .NET that allows code to inspect and interact with itself at runtime. This mechanism provides a way to dynamically discover and manipulate types, fields, methods, properties, and other metadata of loaded assemblies during program execution."
+      },
+      {
+        "question": "What is an immutable object? What are the benefits of using immutable objects?",
+        "answer": "An immutable object is an object whose state cannot be modified after creation. Once an immutable object is instantiated, its properties and fields remain constant throughout its lifetime. Benefits of using immutable objects include: THREAD SAFETY - Immutable objects are inherently thread-safe, as their state cannot be modified concurrently. SIMPLICITY - Immutable objects are simpler to reason about and debug, as their behavior is predictable and deterministic. CACHING - Immutable objects can be safely cached, as their state never change"
+      },
+      {
+        "question": "When should you use StringBuilder, and when should you use string?",
+        "answer": "In general, you should use StringBuilder when performing multiple string operations (concatenations, insertions, modifications, etc.), especially in loops or performance-critical code. string is immutable, meaning that any operation that modifies a string creates a new string object, which can lead to performance issues and increased memory usage."
+      },
+      {
+        "question": "How does StringBuilder work?",
+        "answer": "StringBuilder is a mutable object that provides a more efficient way to build strings dynamically. It works by pre-allocating a buffer in memory and allowing you to modify the contents of that buffer directly without creating new string objects for each operation. This approach is more efficient, especially when dealing with large strings or performing many string operations. Here's a simplified overview of how StringBuilder works: 1. StringBuilder allocates an initial buffer in memory to store characters. 2. As you append, insert, or modify characters, StringBuilder updates the buffer directly without creating new string objects. 3. If the buffer becomes too small to hold the new characters, StringBuilder automatically resizes the buffer to accommodate the additional characters. 4. When you need the final string, you can call the ToString() method, which creates a new string instance from the contents of the buffer."
+      },
+      {
+        "question": "What design patterns for distributed systems do you know?",
+        "answer": "1. Microservices: Organizes an application as a collection of loosely coupled, independently deployable services. 2. API Gateway: Serves as a single entry point for clients to access the underlying microservices. 3. Circuit Breaker: Prevents cascading failures in distributed systems by stopping calls to a failing service. 4. Event-Driven Architecture: Uses an event bus or message broker to decouple the components of a distributed system. 5.CQRS (Command Query Responsibility Segregation): Separates the read and write operations responsibilities, often used in event-driven architectures."
+      },
+      {
+        "question": "What are the principles of a Message Bus?",
+        "answer": "1. Loose Coupling: The components of the system are decoupled, communicating asynchronously through the message bus. 2. Scalability: The message bus can handle increasing message loads by adding more message brokers or consumers. 3. Reliability: To ensure reliable delivery, the message bus provides features like message persistence, retries, and dead-letter queues."
+      },
+      {
+        "question": "Why can duplicates occur in queues?",
+        "answer": "Duplicates can occur in queues for various reasons, such as network failures, process restarts, or message redelivery. To handle this, consumers should be designed to be idempotent, meaning they can safely process the same message multiple times."
+      },
+      {
+        "question": "Explain how asynchronous methods work. How does asynchronicity differ from parallelism?",
+        "answer": "Asynchronicity enables a single thread to be more productive by allowing it to switch between multiple tasks. In contrast, parallelism utilizes multiple threads to work on tasks concurrently. Both approaches can be used to improve the performance and scalability of applications, but they address different types of problems. The key difference between asynchronicity and parallelism is: ASYNCHRONICITY allows a single thread to perform other work while waiting for a long-running operation to complete without blocking the main thread. PARALLELISM involves concurrently executing multiple threads, each working on a different task. Parallelism is useful for CPU-bound tasks that can be divided into smaller, independent subtasks. However, it requires more complex synchronization and resource management compared to asynchronicity."
+      },
+      {
+        "question": "What is the difference between DataSet.Clone and DataSet.Copy?",
+        "answer": "DataSet.Clone copies only the structure of the DataSet, including all DataTable relations, schemas, and constraints. It does not copy any data. DataSet.Copy is a deep copy of a DataSet. It duplicates both its structure and data."
+      },
+      {
+        "question": "What is the difference between DLL and EXE?",
+        "answer": ".EXE files are single outbound files that cannot be shared with other applications. DLL files are multiple inbound files that are shareable."
+      },
+      {
+        "question": "What is Serialization?",
+        "answer": "Serialisation is typically the process of converting the state of an object into a form. We can transport the form. Deserialisation converts a stream into an object. It allows data to be stored and transferred."
+      },
+      {
+        "question": "What is Object Pooling?",
+        "answer": "Object pooling allows using limited resources with the help of software constructs. We can store objects, ready-to-use connections, and threads in a pool in memory so we can use them as and when required. We can pull a new object from the pool and allocate it for a request. Overall, pooling improves performance and scalability. "
+      },
+      {
+        "question": "What are Tuples?",
+        "answer": "A tuple is essentially a data structure. It contains a sequence of elements of different data types. Tuples are data structures that support holding object properties. They avoid creating separate types to hold object properties."
+      },
+      {
+        "question": "What are the advantages of Web Services?",
+        "answer": "1. Web services are simple to build. They support multiple platforms. 2. A web service can extend its interface. It can add new methods without affecting the client's operations. 3. It is stateless and firewall-friendly."
+      },
+      {
+        "question": "What is a .NET web service?",
+        "answer": "We can locate a web service in .NET on a web server. A .NET web service uses standard web protocols to interact with other network applications. The protocols can be HTTP and SOAP. A web service that performs asynchronous communications for XML applications. The applications operate over a .NET communications framework. Also, the .NET web service is a component that helps publish an application's function on the web, making it available to the public."
+      },
+      {
+        "question": "What are the different parts of an Assembly?",
+        "answer": "MANIFEST: It is also known as the assembly metadata. It has details of assembly versions. TYPE METADATA: It has the binary information of a program. MSIL: It is known as the Microsoft Intermediate Language code. RESOURCES: It has a list of related files."
+      },
+      {
+        "question": "What is the difference between managed and unmanaged codes?",
+        "answer": "MANAGED CODES: 1. They run inside a runtime environment. 2. We need to install the .NET framework for execution. 3. They provide automatic memory management. 4. It provides security to applications. 5. It doesn’t allow a memory buffer overflow. UNMANAGED CODES: 1. They run directly on hardware. 2. We don't need to install the .NET framework for execution. 3. It needs manual memory and pointers management. 4. It doesn't provide security to applications. 5. It will enable memory buffer overflow."
+      },
+      {
+        "question": "What is the session object?",
+        "answer": "A Session object stores information and variables. It retains them throughout the session."
+      },
+      {
+        "question": "What is the application object?",
+        "answer": "An application object shares information with all application users. We can put together a set of ASP files to perform a specific purpose."
+      },
+      {
+        "question": "Differentiate between a Debug build and a Release build?",
+        "answer": "Debug builds don't allow the accurate setting of breakpoints. They contain debugging symbols. The code built-in `Release` build is optimised for speed or size without any debug data."
+      },
+      {
+        "question": "What is the difference between trace class and debug class?",
+        "answer": "A call to the Debug class is included in Debug mode only. It is used during the application development. On the other hand, a call to the Trace class can be included in Debug and Release mode. It is used during the application deployment."
+      },
+      {
+        "question": "What are the divisions of the Memory Heap?",
+        "answer": "GENERATION 0: It is Used to store short-lived objects. Frequent Garbage Collection happens in this Generation. GENERATION 1: It is used for medium-lived objects. GENERATION 2: It is used for long-lived objects."
+      },
+      {
+        "question": "What is a Hashtable?",
+        "answer": "The Hashtable class is basically a collection. It stores key-value pairs and organises them based on each key's hash code, which is used to access elements in the collection."
+      },
+      {
+        "question": "What is MIME?",
+        "answer": "MIME stands for Multipurpose Internet Mail Extension. It is a supplementary protocol that sends non-ASCII data through SMTP and facilitates the exchange of data files on the Internet."
+      },
+      {
+        "question": "What is Object-Role Modeling (ORM)?",
+        "answer": "Object-Role Modeling (ORM) is a powerful method for designing and querying information systems at the conceptual level. It is an easy and understandable description of the application for non-technical users."
+      },
+      {
+        "question": "What are the events and delegates?",
+        "answer": "Events are stored as public class members. On the other hand, delegates are stored as private class members. Delegates are also passed as parameters."
+      },
+      {
+        "question": "What is an Interface?",
+        "answer": "An interface is a declaration for a set of class members. It is a reference type that contains only abstract members such as Events, Methods, Properties, etc."
+      },
+      {
+        "question": "Does .NET support multiple inheritances?",
+        "answer": "No, .NET supports only single inheritance. In .NET, a class can inherit only from a single class."
+      },
+      {
+        "question": "What are the two types of Polymorphism?",
+        "answer": "1. Static or compile-time polymorphism 2. Dynamic or runtime polymorphism"
+      },
+      {
+        "question": "What is Polymorphism?",
+        "answer": "Polymorphism refers to one interface with multiple functions. It means that the same method or property can perform different actions depending on the run-time type of the instance that invokes it."
+      },
+      {
+        "question": "Define Method Overriding?",
+        "answer": "Method Overriding is a process that allows using the same name, return type, argument, and invoking the same functions from another class (base class) in the derived class."
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
         "question": "",
         "answer": ""
       },
