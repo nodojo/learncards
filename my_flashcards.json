@@ -250,6 +250,126 @@
         "answer": "1. MULTITHREADING is all about a single process split into multiple threads. 2. PARALLEL PROGRAMMING is all about multiple tasks running on multiple cores simultaneously. 3. ASYNCHRONOUS PROGRAMMING is all about a single thread initiating multiple tasks without waiting for each to complete."
       },
       {
+        "question": "What is a class?",
+        "answer": "A class is a blueprint or template for creating objects. It encapsulates data (fields) and functionality (methods) into a single unit, providing a way to model real-world entities or concepts in software."
+      },
+      {
+        "question": "How does a class differ from an abstract class?",
+        "answer": "An abstract class cannot be instantiated directly, while a regular class can. It can have both abstract and non-abstract (implemented) methods, while a regular class can only have non-abstract methods. A class can inherit from only one abstract class but implement multiple interfaces."
+      },
+      {
+        "question": "How does an abstract class differ from an interface? What are interfaces for, and what tasks do they perform?",
+        "answer": "The main differences between an abstract class and an interface are: Abstract classes can have both abstract and non-abstract members. Interfaces can only have abstract members (except for static and extension methods in C# 8.0 and later). Abstract classes can have access modifiers and can provide method implementations. Interfaces can only have public abstract members. A class can inherit from only one abstract class but implement multiple interfaces. Interfaces are used to achieve abstraction and define a contract."
+      },
+      {
+        "question": "What is the difference between regular and static classes?",
+        "answer": "A regular class can be instantiated and has both static and instance members. A static class cannot be instantiated and contains only static members. Static classes are useful for providing utility methods or constants that don't require any instance state."
+      },
+      {
+        "question": "What is the difference in method overriding between the keywords new and override",
+        "answer": "When overriding a method, the new keyword hides the base class implementation. In contrast, override replaces the base class implementation with the derived class implementation."
+      },
+      {
+        "question": "What is the difference between const and readonly?",
+        "answer": "1. const is a compile-time constant. 2. readonly can be set at runtime but cannot be changed after initialization. 3. const values are inlined by the compiler. 4. readonly fields are stored as instance fields."
+      },
+      {
+        "question": "What is asynchronicity, and how does it differ from multithreading?",
+        "answer": "Asynchronicity allows a program to perform other tasks while waiting for a long-running operation to complete without blocking the main thread. It is different from multithreading, which involves running multiple threads concurrently. With asynchronicity, the application can continue executing other code while the asynchronous operation is in progress, improving overall responsiveness and efficiency. On the other hand, multithreading involves parallel execution of multiple threads, which can be useful for CPU-bound tasks but requires more complex synchronization and resource management."
+      },
+      {
+        "question": "What do the keywords async/await mean?",
+        "answer": "The async keyword marks a method as asynchronous, allowing it to use the await keyword to pause the execution of the method until the awaited asynchronous operation completes. It enables the method to return control to the caller while the asynchronous operation is in progress, improving the application's overall responsiveness."
+      },
+      {
+        "question": "What are the difference between relational and non-relational databases, the pros and cons of using both options.",
+        "answer": "RELATIONAL DATABASES (SQL) store data in tables with defined schemas, using a structured query language (SQL) for data manipulation and retrieval. They excel at handling structured data and complex queries. Relational databases are generally stronger regarding data integrity, consistency, and complex querying. NON-RELATIONAL (NoSQL) databases use flexible, schema-less data models, such as key-value, document-oriented, or graph-based. They are better suited for handling unstructured data and high scalability requirements. Non-relational databases offer higher availability, partition tolerance, and scalability."
+      },
+      {
+        "question": "What are indexes in RDBMS?",
+        "answer": "Indexes in RDBMS are additional data structures that improve the speed of data retrieval operations, such as SELECT queries. Indexes create a sorted list of values from a table column and pointers to the corresponding rows."
+      },
+      {
+        "question": "What is the fundamental difference between unit tests and integration tests?",
+        "answer": "UNIT TESTS focus on testing individual units or components of a system in isolation, verifying that each unit works as expected. They target the smallest testable parts of an application, such as individual methods or classes, and aim to ensure the correctness of the implementation. INTEGRATION TESTS, on the other hand, verify that different components of a system work together correctly. They test the interactions between multiple units or modules, ensuring the overall system functions as expected. Integration tests are typically performed after unit tests, and they help identify issues that may arise from integrating different parts of the application. * The main difference is that unit tests target individual units of code, while integration tests focus on the interactions and data flow between those units. Unit tests are typically easier to write, maintain, and run, while integration tests provide a more comprehensive understanding of the system's behavior."
+      },
+      {
+        "question": "What are unit tests used for?",
+        "answer": "Unit tests are used to verify the correctness of individual units of code (methods, classes, or components) in isolation. By testing units in isolation, you ensure each building block functions correctly, leading to a reliable application."
+      },
+      {
+        "question": "What are the advantages and disadvantages of using unit tests?",
+        "answer": "Advantages of unit tests include catching bugs early, improving code quality, and providing a safety net for future changes. Disadvantages include additional development effort and the potential for tests to become outdated over time."
+      },
+      {
+        "question": "From what three logical blocks is a unit test composed?",
+        "answer": "ARRANGE: Set up the necessary test data and preconditions. ACT: Execute the code being tested. ASSERT: Verify that the observed outcome matches the expected outcome."
+      },
+      {
+        "question": "Describe in as much detail as possible what happens at the HTTP level when you type google.com in a browser.",
+        "answer": "1. The browser first resolves the domain name “google.com” to an IP address using the Domain Name System (DNS). The browser sends a DNS query to a DNS server, which looks up the IP address associated with the domain. 2. Once the IP address is obtained, the browser initiates a TCP connection with the web server at that IP address, using the HTTP protocol on port 80 (the default HTTP port). 3. The browser then sends an HTTP GET request to the web server, requesting the root resource (usually the home page). The request includes headers with information about the client, such as the browser type, accepted file types, and other metadata. 4. The web server receives the request, processes it, and generates a response. The response includes an HTTP status code (e.g., 200 for successful, 404 for not found), response headers with metadata about the response, and the web page's actual content (usually in HTML format). 5. The browser receives the response, parses the HTML, and renders the web page. As the page loads, the browser may send additional requests for resources referenced in the HTML, such as images, stylesheets, and JavaScript files. 6. The browser continues to fetch all the necessary resources and assembles the complete web page, displaying it to the user.  * HTTPS (Hypertext Transfer Protocol Secure) is a secure version of the HTTP protocol that adds encryption to the communication between the client (browser) and the web server."
+      },
+      {
+        "question": "What is your understanding of SOLID principles?",
+        "answer": "1. SINGLE RESPONSIBILITY PRINCIPLE (SRP): A class should have only one reason to change. 2. OPEN/CLOSED PRINCIPLE (OCP):Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. 3. LISKOV SUBSTITUTION PRINCIPLE (LSP): Subtypes must be substitutable for their base types. 4. Clients should not be forced to depend on interfaces they do not use. 5. DEPENDENCY INVERSION PRINCIPLE (DIP): High-level modules should not depend on low-level modules. Both should depend on abstractions."
+      },
+      {
+        "question": "What is dependency injection?",
+        "answer": "Dependency Injection (DI) is a design pattern that allows you to decouple the creation and management of object dependencies from the objects that depend on them. Instead of directly creating dependencies, objects receive their dependencies from an external source. For example, through the constructor, method parameters, or properties."
+      },
+      {
+        "question": "Why is dependency injection useful?",
+        "answer": "1. Promotes loose coupling between components, making the code more modular and testable. 2. Allows for easy substitution of implementations, enabling flexibility and adaptability. 3. Facilitates the use of abstractions, which can improve the system's overall design. 4. Simplifies the management of object lifetime and resource allocation."
+      },
+      {
+        "question": "What are cohesion and coupling, and what do they mean?",
+        "answer": "COHESION refers to the degree to which the elements inside a module (e.g., a class or a function) belong together. High cohesion means that the elements within a module are strongly related and work together to achieve a specific purpose. Low cohesion indicates that the elements within a module are loosely related or unrelated, making the module harder to understand and maintain. COUPLING refers to the degree of interdependence between modules. Low coupling means that modules have minimal dependencies on each other, making the system more flexible and easier to modify. High coupling indicates that modules have strong dependencies, which can make the system more rigid and harder to change."
+      },
+      {
+        "question": "What design patterns do you know? Explain the essence of the ones you mentioned.",
+        "answer": "1. SINGLETON ensures a class has only one instance and provides a global point of access to it. Useful for managing global state or resources. 2. FACTORY defines an interface for creating objects but lets subclasses decide which class to instantiate. Helpful for creating objects without exposing the creation logic. 3. ADAPTER converts the interface of a class into another interface the client expects. Allows classes with incompatible interfaces to work together. 4. OBSERVER defines a one-to-many dependency between objects. So that when one object changes state, all its dependents are notified and updated automatically. Useful for implementing event-driven architectures. 5. STRATEGY defines a family of algorithms, encapsulates each one, and makes them interchangeable. Allows the algorithm used by a class to be selected at runtime."
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
+        "question": "",
+        "answer": ""
+      },
+      {
         "question": "",
         "answer": ""
       },
